@@ -14,5 +14,3 @@ public class Font {
     private String color = "black";
     private String weight = "normal";
 }
-
-
