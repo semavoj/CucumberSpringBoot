@@ -9,5 +9,3 @@ When User selects font details
 When User selects border details
 | dashed | orange | dark|
 Then Confirm user selections
-
-

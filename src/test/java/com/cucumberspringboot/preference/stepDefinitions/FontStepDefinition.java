@@ -7,6 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
+/**
+ * Creates the instance variable type of Font
+ * Annotates with @Autowired to inject the beans
+ * Updates the Font object values
+ */
 public class FontStepDefinition {
     @Autowired
     private Font font;
