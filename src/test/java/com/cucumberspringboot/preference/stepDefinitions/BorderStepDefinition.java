@@ -7,6 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
+/**
+ * Creates the instance variable type of Border
+ * Annotates with @Autowired
+ * Updates the Border object values
+ */
 public class BorderStepDefinition {
     @Autowired
     private Border border;
