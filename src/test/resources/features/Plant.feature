@@ -1,4 +1,4 @@
-Feature: Plant
+Feature: Stresstesting plants
 
   Scenario: Treating the plant well
     Given I have a plant
@@ -23,3 +23,4 @@ Feature: Plant
         |    2  |   4       |
         |    3  |   4       |
         |    1  |   2       |
+        |    1  |   3       |

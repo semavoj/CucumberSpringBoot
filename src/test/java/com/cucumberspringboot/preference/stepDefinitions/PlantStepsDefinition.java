@@ -1,7 +1,6 @@
 package com.cucumberspringboot.preference.stepDefinitions;
 
 import com.cucumberspringboot.preference.data.Plant;
-import com.cucumberspringboot.preference.data.Font;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -27,17 +26,18 @@ public class PlantStepsDefinition {
 
     @When("I water my plant with {int} liter")
     public void i_water_my_plant_with_liter(Integer int1) {
-        plant.water(int1);
+        plant.setWaterSuppliedLt(int1);
     }
 
     @When("I fertilize it with {int} kg of fertilizer every week")
     public void i_fertilize_it_with_kg_of_fertilizer_every_week(Integer int1) {
-        plant.fertilize(int1);
+        plant.setFertilizerConsumedGr(int1);
     }
 
     @Then("my plant grows")
     public void my_plant_grows() {
-        Assertions.assertTrue(plant.grow());
+        Assertions.assertTrue(plant.getWaterSuppliedLt() == plant.getWaterNeedLt());
+        Assertions.assertTrue(plant.getFertilizerConsumedGr()==plant.getFertilizerNeedGr());
     }
 }
 
